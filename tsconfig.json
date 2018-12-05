@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "declaration": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "lib": ["es6", "dom"],
+    "module": "commonjs",
+    "removeComments": false,
+    "target": "es5",
+    "sourceMap": true,
+    "strictNullChecks": true,
+    "noImplicitAny": true
+  },
+  "exclude": ["node_modules", "test", "**/*.spec.ts"],
+  "files": ["index.ts", "src/decorators.ts", "src/json-serializer.ts"],
+  "include": ["src/*.ts", "test/foobar.ts", "test/json-serializer.spec.ts"]
+}

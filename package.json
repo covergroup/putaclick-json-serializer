@@ -1,0 +1,40 @@
+{
+  "name": "putaclic-json-serializer",
+  "version": "0.0.8",
+  "description": "one more json deserializer for typescript but with abstract deserialization",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "karma start karma.conf.js",
+    "build": "npm run test && tsc",
+    "dist": "npm run build && npm pack",
+    "packagr": "ng-packagr -p ng-package.json",
+    "tarball": "(ng-packagr -p ng-package.json && cd dist && npm pack)"
+  },
+  "typescript": {
+    "definition": "index.d.ts"
+  },
+  "author": "Christof Hullaert",
+  "license": "ISC",
+  "devDependencies": {
+    "@angular/common": "^5.0.0",
+    "@angular/compiler": "^5.0.0",
+    "@angular/compiler-cli": "^5.0.0",
+    "@angular/core": "^7.1.1",
+    "@types/jasmine": "^3.3.1",
+    "@types/pluralize": "0.0.29",
+    "jasmine": "^3.3.0",
+    "jasmine-core": "^3.3.0",
+    "karma": "^3.1.3",
+    "karma-jasmine": "^2.0.1",
+    "karma-mocha-reporter": "^2.2.5",
+    "karma-phantomjs-launcher": "^1.0.4",
+    "karma-typescript": "^3.0.13",
+    "ng-packagr": "^4.4.5",
+    "typescript": "^3.2.1",
+    "typings": "^2.1.1"
+  },
+  "dependencies": {
+    "pluralize": "^7.0.0"
+  }
+}
